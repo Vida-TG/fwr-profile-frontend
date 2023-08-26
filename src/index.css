@@ -5,9 +5,95 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.home, .email, .choose-country, .otp, .password, .phone-num, .login, .forgot-password, .reset {
+  background: url('../src/assets/yellow_smoke_background.png'), #000000;
+  background-size: cover;
+  background-repeat: no-repeat;    
+  background-attachment: fixed;
+}
+@media screen and (min-width: 768px) {
+  .home, .email, .choose-country, .otp, .password, .phone-num, .login, .forgot-password, .reset {
+      background: url('../src/assets/yellow_smoke_background.png'), #000000;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+  }
+}
+.bg-fwr {
+  background-color: #EECB7B !important;
+  color: black !important;
+}
+.bg-black {
+  background-color: #000000;
+}
+.border-fwr {
+  border-color: #EECB7B !important;
+}
+.text-fwr {
+  color: #EECB7B !important;
+}
+.fw-bold-0 {
+  font-weight: 500;
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: red!important;    
+}
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: white !important;
+}
+.bg-otp {
+  background-color: #000000;
+  color: white;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.fs-7 {
+  font-size: small;
+}
+.btn-fwr {
+  background-color: #008000 !important;
+  color: white !important;
+}
+.btn-outline-fwr {
+  background-color: inherit !important;
+  color: #008000 !important;
+  border-color: #008000 !important;
+}
+.bg-fwr-lite {
+  background-color: #008000 !important;
+  color: white !important;
+}
+.btn-white {
+  background-color: white !important;
+}
+.text-fwr-lite {
+  color: #008000 !important;
+}
+.profile-picture {
+  margin-top: -70px;
+}
+.active-user{
+  height: 2px;
+  width: 2px;
+  margin-left: -20px;
+  margin-top: 52px;
+}
+.bg-green {
+  background-color: #008000;
+}
+.btn-grey {
+  background-color: #F0F0F0 !important;
 }
