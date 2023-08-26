@@ -1,4 +1,4 @@
-import { Alert, Button, FormControl, IconButton, InputAdornment, InputLabel, OutlinedInput } from "@mui/material";
+import { Alert, Button, FormControl, FormHelperText, IconButton, InputAdornment, InputLabel, OutlinedInput } from "@mui/material";
 import React, { useState } from "react";
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
@@ -32,6 +32,9 @@ const Password = ()=>{
                         }
                         label="Password"
                     />
+                    <FormHelperText className="text-white">
+                        At least <span className="fw-bold-0">9 characters</span> containing <span className="fw-bold-0">a letter</span> and <span className="fw-bold-0">a number</span>
+                    </FormHelperText>
                 </FormControl>
                 <div class="d-flex justify-content-center mt-5">
                    <Button type="submit" className="fw-bold mx-auto text-white bg-fwr mx-2 px-5 py-3 rounded-pill w-75">
