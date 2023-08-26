@@ -12,14 +12,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.home, .email, .choose-country, .otp, .password, .phone-num, .login, .forgot-password, .reset {
+.home, .email, .choose-country, .otp, .password, .phone-num, .login, .forgot-password, .reset, .success {
   background: url('../src/assets/yellow_smoke_background.png'), #000000;
   background-size: cover;
   background-repeat: no-repeat;    
   background-attachment: fixed;
 }
 @media screen and (min-width: 768px), (max-height: 1000px) {
-  .home, .email, .choose-country, .otp, .password, .phone-num, .login, .forgot-password, .reset {
+  .home, .email, .choose-country, .otp, .password, .phone-num, .login, .forgot-password, .reset, .success {
       background: url('../src/assets/yellow_smoke_background.png'), #000000;
       background-size: cover;
       background-repeat: no-repeat;
