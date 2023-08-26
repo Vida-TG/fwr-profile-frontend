@@ -1,4 +1,4 @@
-import { Button, FormControl, InputLabel, OutlinedInput } from "@mui/material";
+import { Button, FormControl, FormHelperText, InputLabel, OutlinedInput } from "@mui/material";
 import React, { useState } from "react";
 
 const PhoneNumber = ()=>{
@@ -14,6 +14,7 @@ const PhoneNumber = ()=>{
                 <FormControl helperText='Ensure you add your country code' variant="outlined" className="w-100 text-white my-2" color="warning">
                     <InputLabel className="text-white">Phone Number</InputLabel>
                     <OutlinedInput helperText='Ensure you add your country code' className="text-white" label='Phone Number' />
+                    <FormHelperText className="text-white">Ensure you add your country code</FormHelperText>
                 </FormControl> 
                 <div className="d-flex justify-content-center mt-5 mx-auto">
                     <Button type="submit" className={isLoading ? 'border border-fwr fw-bold mx-auto text-white mx-2 px-5 py-3 rounded-pill w-75' : 'bg-fwr fw-bold mx-auto text-white mx-2 px-5 py-3 rounded-pill w-75'}>
