@@ -14,15 +14,40 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/register'>
-            <Route path='/register/email' element={<Email /> } />
-            <Route path='/register/password' element={<Password />} />
-            <Route path='/register/phone-num' element={<PhoneNumber />} />
-            <Route path='/register/choose-country' element={<ChooseCountry />} />
+          <Route 
+            path='/' 
+            element={<Home />} 
+          />
+          <Route 
+            path='/login' 
+            element={<Login />} 
+          />
+          <Route 
+            path='/register'
+          >
+            <Route 
+              path='/register/email' 
+              element={<Email /> } 
+            />
+            <Route 
+              path='/register/password' 
+              element={<Password />} 
+            />
+            <Route 
+              path='/register/phone-num' 
+              element={<PhoneNumber />} 
+            />
+            <Route 
+              path='/register/choose-country' 
+              element={<ChooseCountry />} 
+            />
           </Route>
-          <Route path='/user' element={<Sidebar />} ></Route>
+          <Route 
+            path='/user' 
+            element={<Sidebar />} 
+          >
+            
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
