@@ -18,7 +18,7 @@ code {
   background-repeat: no-repeat;    
   background-attachment: fixed;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), (max-height: 1000px) {
   .home, .email, .choose-country, .otp, .password, .phone-num, .login, .forgot-password, .reset {
       background: url('../src/assets/yellow_smoke_background.png'), #000000;
       background-size: cover;
@@ -96,4 +96,8 @@ code {
 }
 .btn-grey {
   background-color: #F0F0F0 !important;
+}
+.bg-otp {
+  background-color: #000000 !important;
+  color: white !important;
 }
