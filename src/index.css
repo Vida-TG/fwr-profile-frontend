@@ -31,6 +31,9 @@ code {
       right: 0;
   }
 }
+.active {
+  color: #008000 !important;  
+}
 .bg-fwr {
   background-color: #EECB7B !important;
   color: black !important;
@@ -85,12 +88,6 @@ code {
 .profile-picture {
   margin-top: -70px;
 }
-.active-user{
-  height: 2px;
-  width: 2px;
-  margin-left: -20px;
-  margin-top: 52px;
-}
 .bg-green {
   background-color: #008000;
 }
@@ -100,4 +97,10 @@ code {
 .bg-otp {
   background-color: #000000 !important;
   color: white !important;
+}
+.bg-default-address {
+  background-color: #F5FFF5 !important;
+}
+.bg-address {
+  background-color: #F0F0F0 !important;
 }
