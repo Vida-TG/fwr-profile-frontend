@@ -46,7 +46,7 @@ const Sidebar = (props)=>{
                     ml: { md: `${drawerWidth}px` },
                     }}
                 >
-                <Toolbar className='bg-white text-dark'>
+                <Toolbar className='bg-white text-dark d-block d-md-none'>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
@@ -90,7 +90,7 @@ const Sidebar = (props)=>{
                 </Box>
                 <Box
                 component="main" 
-                sx={{ flexGrow: 1, p: 3, marginLeft: { md: `${drawerWidth}` }, width: { md: `calc(100% - ${drawerWidth}px)` } }}
+                sx={{ flexGrow: 1, p: 2, width: { md: `calc(100% - ${drawerWidth}px)` } }}
                 >
                     <Outlet />                    
                 </Box>
