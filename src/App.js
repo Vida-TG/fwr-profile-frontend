@@ -12,6 +12,7 @@ import Success from './components/Success';
 import ForgotPassword from './components/password-reset/ForgotPassword';
 import ResetPassword from './components/password-reset/ResetPassword';
 import OtpForReset from './components/password-reset/OtpForReset';
+import { InstallmentPlans } from './components/sidebar/InstallmentPlans';
 
 function App() {
   return (
@@ -64,14 +65,18 @@ function App() {
           </Route>
           <Route 
             path='/user' 
-            element={<Sidebar />} 
+            element={<Sidebar />}
           >
-            
+            <Route
+              path='/user/installment-plans'
+              element={<InstallmentPlans />}
+            />
           </Route>
           <Route 
             path='/success/:type'
             element={<Success />}
           />
+
         </Routes>
       </BrowserRouter>
     </div>

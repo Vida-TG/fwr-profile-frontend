@@ -90,7 +90,7 @@ const Sidebar = (props)=>{
                 </Box>
                 <Box
                 component="main" 
-                sx={{ flexGrow: 1, p: 3, width: { md: `calc(100% - ${drawerWidth}px)` } }}
+                sx={{ flexGrow: 1, p: 3, marginLeft: { md: `${drawerWidth}` }, width: { md: `calc(100% - ${drawerWidth}px)` } }}
                 >
                     <Outlet />                    
                 </Box>

@@ -26,12 +26,12 @@ const Menu = ()=>{
             </List>
             <List>
                 <ListItem disablePadding>
-                    <ListItemButton onClick={()=>navigate('/user/instalment-plans')} className={location.pathname == '/user/instalment-plans' ? 'bg-active' : ''} >
+                    <ListItemButton onClick={()=>navigate('/user/installment-plans')} className={location.pathname == '/user/installment-plans' ? 'bg-active' : ''} >
                         <ListItemIcon>
                         </ListItemIcon>
                         <ListItemText>
                             <p className='my-0'>
-                             Instalment Plans
+                             Installment Plans
                             </p>
                         </ListItemText>
                     </ListItemButton>
