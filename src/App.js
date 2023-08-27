@@ -12,6 +12,8 @@ import Success from './components/Success';
 import ForgotPassword from './components/password-reset/ForgotPassword';
 import ResetPassword from './components/password-reset/ResetPassword';
 import OtpForReset from './components/password-reset/OtpForReset';
+import UploadedDocs from './components/accounts/UploadedDocs';
+import Address from './components/accounts/Address';
 
 function App() {
   return (
@@ -66,7 +68,14 @@ function App() {
             path='/user' 
             element={<Sidebar />} 
           >
-            
+            <Route 
+              path='/user/uploaded-docs'
+              element={<UploadedDocs />}
+            />
+            <Route 
+              path='/user/address'
+              element={<Address />}
+            />
           </Route>
           <Route 
             path='/success/:type'
