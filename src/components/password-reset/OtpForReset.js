@@ -23,7 +23,7 @@ const OtpForReset = ()=>{
             setError('')
             const payload = { email, otp }
             axios.post(
-                `${api}verify/verify-reset-code`,
+                `${api}verify/verify-otp-code`,
                 payload        
             ).then(res=>{
                 if (res.data.status) {
