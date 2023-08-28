@@ -41,6 +41,9 @@ code {
 .bg-black {
   background-color: #000000;
 }
+.text-black {
+  color: #000000;
+}
 .border-fwr {
   border-color: #EECB7B !important;
 }
@@ -103,4 +106,84 @@ code {
 }
 .bg-address {
   background-color: #F0F0F0 !important;
+}
+.visa-image {
+  padding-top: 8px;
+  height: 28px;
+}
+.visa-light-image {
+  padding-top: 7px;
+  height: 33px;
+}
+.bank-card {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bank-card-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.label-container {
+  flex: 1;
+  margin-right: 10px;
+}
+.inputs-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+
+
+.history-flex {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.history-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.bank-card-details {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.bank-card-text {
+  font-weight: bold;
+  margin: 2px 0px;
+}
+
+.bank-card-amount {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+
+
+
+.installment-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+.installment-part {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.extension-text,
+.pending-status {
+  font-size: 14px;
+  font-weight: bold;
 }

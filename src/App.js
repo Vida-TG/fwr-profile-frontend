@@ -14,6 +14,9 @@ import ResetPassword from './components/password-reset/ResetPassword';
 import OtpForReset from './components/password-reset/OtpForReset';
 import UploadedDocs from './components/accounts/UploadedDocs';
 import Address from './components/accounts/Address';
+import { InstallmentPlans } from './components/accounts/InstallmentPlans';
+import { BankCards } from './components/accounts/BankCards';
+import { Statement } from './components/accounts/Statement';
 
 function App() {
   return (
@@ -68,7 +71,26 @@ function App() {
             path='/user' 
             element={<Sidebar />}
           >
-            
+            <Route 
+              path='/user/uploaded-docs'
+              element={<UploadedDocs />}
+            />
+            <Route 
+              path='/user/address'
+              element={<Address />}
+            />
+            <Route
+              path='/user/bank-cards'
+              element={<BankCards />}
+            />
+            <Route
+              path='/user/installment-plans'
+              element={<InstallmentPlans />}
+            />
+            <Route
+              path='/user/statement-of-account'
+              element={<Statement />}
+            />
           </Route>
           <Route 
             path='/success/:type'
