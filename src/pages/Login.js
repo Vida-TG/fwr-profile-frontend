@@ -2,33 +2,72 @@ import { Alert, FormControl, IconButton, InputAdornment, InputLabel, OutlinedInp
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import React, { useState } from "react";
+import { useFormik } from "formik";
+import { loginSchema } from "../schemas";
+import axios from "axios";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router";
 
 const Login = ()=>{
+    const navigate = useNavigate()
+    const api = useSelector(state=>state.uri)
     const [isLoading, setIsLoading] = useState(false)
     const [error, setError] = useState('')
-    const [showPassword, setShowPassword] = useState(false)
-    const login = ()=>{}
+    const [showPassword, setShowPassword] = useState(false)    
+    const { handleSubmit, handleBlur, handleChange, errors, touched } = useFormik({
+        initialValues: {
+            email: '',
+            password: ''
+        },
+        validationSchema: loginSchema,
+        onSubmit: (values)=>{
+            setError('')
+            setIsLoading(true)
+            axios.post(
+                `${api}auth/login`,
+                values
+            ).then(res=>{
+                setIsLoading(false)
+                console.log(res.data)
+                if (res.data.status) {
+                    sessionStorage.setItem('token', JSON.stringify(res.data.token))
+                    navigate('/user/statement-of-account')
+                } else {
+                    setError(res.data.message)
+                }
+            }).catch(err=>{
+                setIsLoading(false)                
+                setError('Internal Server Error')
+            })
+        }
+    })
     return (
         <div className="login d-flex justify-content-center mx-auto">            
-            <form onSubmit={login} className="col-lg-3 col-md-6 mt-sm-5 pt-md-0 px-md-0 px-4">
+            <form onSubmit={handleSubmit} className="col-lg-3 col-md-6 mt-sm-5 pt-md-0 px-md-0 px-4 animate__animated animate__fadeIn">
                 <div className="d-flex justify-content-center mt-4 mt-md-0">
                     <img src={require("../assets/9jaWivesLogo.png")} />
                 </div>
                 <p className="fs-4 pt-5 fw-bold-0">Login to your account</p>
-                {/* <Alert severity="error">
-                    {error}
-                </Alert> */}
-                {/* <TextField variant="outlined" label='Email' className="w-100 text-white my-2" color="warning" /> */}
-                <FormControl variant="outlined" className="w-100 text-white my-2" color="warning">
+                {
+                    error !== ''
+                    &&
+                    <Alert severity="error" className="mb-3">
+                        {error}
+                    </Alert>
+                }                
+                <FormControl error={touched.email && errors.email} variant="outlined" className="w-100 text-white my-2" color="warning">
                     <InputLabel className="text-white">Email Address</InputLabel>
-                    <OutlinedInput className="text-white" label='Email Address' />
+                    <OutlinedInput onChange={handleChange} onBlur={handleBlur} name="email" className="text-white" label='Email Address' />
                 </FormControl>            
-                <FormControl variant="outlined" className="w-100 text-white my-2" color="warning">
+                <FormControl error={touched.password && errors.password} variant="outlined" className="w-100 text-white my-2" color="warning">
                     <InputLabel htmlFor="outlined-adornment-password" className="text-white">Password</InputLabel>
                     <OutlinedInput
                         id="outlined-adornment-password"
                         type={showPassword ? 'text' : 'password'}
+                        name="password"
                         className="text-white"
+                        onChange={handleChange}
+                        onBlur={handleBlur}
                         endAdornment={
                         <InputAdornment position="end">
                             <IconButton
@@ -45,7 +84,7 @@ const Login = ()=>{
                     />
                 </FormControl>
                 <div className="d-flex justify-content-center my-2">
-                    <Button type="submit" className={isLoading ? 'fw-bold mx-auto text-white mx-2 rounded-pill w-75 border border-fwr' : 'fw-bold mx-auto text-white mx-2 px-5 py-3 rounded-pill w-75 bg-fwr'} >
+                    <Button type="submit" className={isLoading ? 'fw-bold-0 mx-auto text-white mx-2 rounded-pill w-75 border border-fwr px-5 py-2' : 'fw-bold mx-auto text-white mx-2 px-5 py-2 rounded-pill w-75 bg-fwr'} >
                         {isLoading ? 'Please wait...' : 'Login'}
                     </Button>
                 </div>
