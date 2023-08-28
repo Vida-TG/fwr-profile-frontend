@@ -53,12 +53,6 @@ code {
 .fw-bold-0 {
   font-weight: 500;
 }
-::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
-  color: red!important;    
-}
-.mat-form-field-appearance-outline .mat-form-field-outline {
-  color: white !important;
-}
 .bg-otp {
   background-color: #000000;
   color: white;
