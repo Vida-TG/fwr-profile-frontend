@@ -67,6 +67,11 @@ code {
   background-color: #008000 !important;
   color: white !important;
 }
+.btn-back {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
 .btn-outline-fwr {
   background-color: inherit !important;
   color: #008000 !important;
