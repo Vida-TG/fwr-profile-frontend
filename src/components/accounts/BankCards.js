@@ -84,7 +84,7 @@ export const BankCards = () => {
                 {
                     arr.map((i) => (
                         <div className="history-flex">
-                            <img className="history-image" src={require('../../assets/visa.png')}/>
+                            <img className="history-image" src={require('../../assets/transactpic.png')}/>
                             <CardContent className="bank-card-details">
                                 <Typography variant="subtitle1" className="bank-card-text">
                                     Visa Extension

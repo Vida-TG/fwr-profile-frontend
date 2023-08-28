@@ -13,8 +13,8 @@ export const Statement = () => {
                 </p>
             </div>
             <div className="border-bottom mt-md-0 mt-5">
-                <div className="bank-card-flex pt-2 pt-md-4 fs-5 fw-bold-0 text-dark my-0">
-                    <p className="col-5">Recent Transactions</p>
+                <div className="bank-card-flex flex-md-row flex-column pt-2 pt-md-4 fs-5 fw-bold-0 text-dark my-0 mb-md-0 mb-2">
+                    <p className="">Recent Transactions</p>
                         <Paper
                             className="border border-dark rounded-5" component='form'
                             sx={{ p: '2px 3px', m: '0px 5px', display: 'flex', alignItems: 'center'}}
@@ -28,7 +28,7 @@ export const Statement = () => {
                             />
                         </Paper>
                 </div>
-                <p className="text-dark fs-6 col-md-5">
+                <p className="text-dark fs-6 col-md-5 fw-bold-0">
                     Today
                 </p>
             </div>
@@ -36,16 +36,16 @@ export const Statement = () => {
                 {
                     arr.map((i) => (
                         <div className="history-flex">
-                            <img className="history-image" src={require('../../assets/visa.png')}/>
+                            <img className="history-image" src={require('../../assets/transactpic.png')}/>
                             <CardContent className="bank-card-details">
-                                <Typography variant="subtitle1" className="bank-card-text">
+                                <Typography variant="subtitle1" className="bank-card-text fw-bold">
                                     Visa Extension
                                 </Typography>
-                                <Typography variant="body2" className="bank-card-text">
+                                <Typography variant="body2" className="bank-card-text fw-bold-0">
                                     Full Payment
                                 </Typography>
                             </CardContent>
-                            <Typography variant="body1" className="bank-card-amount">
+                            <Typography variant="body1" className="bank-card-amount fw-bold">
                                 $500
                             </Typography>
                         </div>
@@ -55,7 +55,7 @@ export const Statement = () => {
 
 
             <div className="border-bottom mt-5">
-                <p className="text-dark fs-6 col-md-5">
+                <p className="text-dark fs-6 col-md-5 fw-bold-0">
                     This week
                 </p>
             </div>
@@ -63,16 +63,16 @@ export const Statement = () => {
                 {
                     arr2.map((i) => (
                         <div className="history-flex">
-                            <img className="history-image" src={require('../../assets/visa.png')}/>
+                            <img className="history-image" src={require('../../assets/transactpic.png')}/>
                             <CardContent className="bank-card-details">
-                                <Typography variant="subtitle1" className="bank-card-text">
+                                <Typography variant="subtitle1" className="bank-card-text fw-bold">
                                     Visa Extension
                                 </Typography>
-                                <Typography variant="body2" className="bank-card-text">
+                                <Typography variant="body2" className="bank-card-text fw-bold-0">
                                     Full Payment
                                 </Typography>
                             </CardContent>
-                            <Typography variant="body1" className="bank-card-amount">
+                            <Typography variant="body1" className="bank-card-amount fw-bold">
                                 $500
                             </Typography>
                         </div>

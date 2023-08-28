@@ -36,18 +36,18 @@ export const InstallmentPlans = () => {
                     arr.map((i) => (
                         <div className="installment-flex">
                             <Box className="installment-part">
-                                <img className="history-image" src={require('../../assets/visa.png')}/>
-                                <Typography variant="body2" className="extension-text">
+                                <img className="history-image" src={require('../../assets/transactpic.png')}/>
+                                <Typography variant="body2" className="extension-text fs-6 fw-bold">
                                     Visa Extension
                                 </Typography>
                             </Box>
                             <div className="installment-part">
-                                <Typography variant="subtitle2" className="payment-info">
+                                <Typography variant="subtitle2" className="payment-info fs-6">
                                     Payment 01 of 03
                                 </Typography>
                             </div>
                             <div className="installment-part">
-                                <Typography variant="subtitle2" className="pending-status">
+                                <Typography variant="subtitle2" className="pending-status fw-bold fs-5">
                                     Pending
                                 </Typography>
                             </div>
