@@ -34,8 +34,8 @@ const ResetPassword = ()=>{
                     }
                 }
             ).then(res=>{
-                // navigate('/success/password-reset')
-                console.log(res.data)
+                navigate('/success/password-reset')
+                // console.log(res.data)
             }).catch(err=>{
                 setIsLoading(false)
                 err.code == 'ERR_NETWORK' 
