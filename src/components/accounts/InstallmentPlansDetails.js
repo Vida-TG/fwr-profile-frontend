@@ -17,7 +17,7 @@ export const InstallmentPlansDetails = () => {
     return (
         <Fragment>
             <div className="border-bottom mt-md-0 mt-5">
-                <p className="fs-5 p-4 fw-bold-0 text-dark my-0">
+                <p className="fs-5 py-4 fw-bold-0 text-dark my-0">
                     Installment Plans
                 </p>
             </div>
@@ -74,7 +74,7 @@ export const InstallmentPlansDetails = () => {
                             </div>
                         </Box>
                         <Box className="mt-5">
-                            <div className="d-flex justify-content-between my-3"><span>Amount</span><span style={{textAlign:'right'}}>Date</span></div>
+                            <div className="d-flex justify-content-between my-3 fw-bold-0"><span>Amount</span><span style={{textAlign:'right'}}>Date</span></div>
                             <div className="d-flex justify-content-between my-3"><span>$100</span><span style={{textAlign:'right'}}>July 10, 2023</span></div>
                         </Box>
 
@@ -86,7 +86,7 @@ export const InstallmentPlansDetails = () => {
                             </div>
                         </Box>
                         <Box className="mt-5">
-                            <div className="d-flex justify-content-between my-3"><span>Amount</span><span style={{textAlign:'right'}}>Due Date</span></div>
+                            <div className="d-flex justify-content-between my-3 fw-bold-0"><span>Amount</span><span style={{textAlign:'right'}}>Due Date</span></div>
                             <div className="d-flex justify-content-between my-3"><span>$100</span><span style={{textAlign:'right'}}>July 17, 2023</span></div>
                         </Box>
                     </Grid>
