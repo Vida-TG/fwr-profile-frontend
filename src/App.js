@@ -17,6 +17,7 @@ import Address from './components/accounts/Address';
 import { InstallmentPlans } from './components/accounts/InstallmentPlans';
 import { BankCards } from './components/accounts/BankCards';
 import { Statement } from './components/accounts/Statement';
+import { Summary } from './components/accounts/Summary';
 
 function App() {
   return (
@@ -92,11 +93,14 @@ function App() {
               element={<Statement />}
             />
           </Route>
+          <Route
+              path='/summary'
+              element={<Summary />}
+            />
           <Route 
             path='/success/:type'
             element={<Success />}
           />
-
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,10 +1,13 @@
 import { Search } from "@mui/icons-material";
 import { CardContent, IconButton, InputBase, Paper, Typography } from "@mui/material";
 import React, { Fragment, useState } from "react";
+import { useNavigate } from "react-router";
 
 export const Statement = () => {
     const [arr, setArr] = useState([1, 2, 3])
     const [arr2, setArr2] = useState([1, 2, 3, 4])
+
+    const navigate = useNavigate();
     return (
         <Fragment>
             <div className="border-bottom mt-md-0 mt-5">
@@ -35,7 +38,7 @@ export const Statement = () => {
             <div>
                 {
                     arr.map((i) => (
-                        <div className="history-flex">
+                        <div className="history-flex cursor-pointer" onClick={()=>navigate('/summary')} >
                             <img className="history-image" src={require('../../assets/transactpic.png')}/>
                             <CardContent className="bank-card-details">
                                 <Typography variant="subtitle1" className="bank-card-text fw-bold">
@@ -62,7 +65,7 @@ export const Statement = () => {
             <div>
                 {
                     arr2.map((i) => (
-                        <div className="history-flex">
+                        <div className="history-flex cursor-pointer" onClick={()=>navigate('/summary')} >
                             <img className="history-image" src={require('../../assets/transactpic.png')}/>
                             <CardContent className="bank-card-details">
                                 <Typography variant="subtitle1" className="bank-card-text fw-bold">
