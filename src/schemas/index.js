@@ -1,5 +1,5 @@
 import * as yup from 'yup'
-const passwordRules = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&].{8,}/
+const passwordRules = /^(?=.*[a-zA-Z])(?=.*\d).{8,}$/
 const phonenumberRules = /(^[+]\d{13}$)/
 
 export const loginSchema = yup.object().shape({
