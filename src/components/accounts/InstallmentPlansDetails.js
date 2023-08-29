@@ -54,7 +54,7 @@ export const InstallmentPlansDetails = () => {
                                 Paid: $100
                             </div>
                             <div className='d-flex justify-content-center col-12 my-2'>
-                                Payment: O1 of 03
+                                Payment: 01 of 03
                             </div>
                         </Box>
                         <Box className="mt-5">
