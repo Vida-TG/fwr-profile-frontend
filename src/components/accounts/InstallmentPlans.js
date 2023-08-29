@@ -1,9 +1,11 @@
 import { Search } from "@mui/icons-material";
 import { Box, IconButton, InputBase, Paper, Typography } from "@mui/material";
 import React, { Fragment, useState } from "react";
+import { useNavigate } from "react-router";
 
 export const InstallmentPlans = () => {
     const [arr, setArr] = useState([1, 2, 3, 4, 5])
+    const  navigate = useNavigate()
     return (
         <Fragment>
             <div className="border-bottom mt-md-0 mt-5">
@@ -34,7 +36,7 @@ export const InstallmentPlans = () => {
             <div>
                 {
                     arr.map((i) => (
-                        <div className="installment-flex">
+                        <div className="installment-flex cursor-pointer" onClick={()=>navigate('/user/installment-plan-details')}>
                             <Box className="installment-part">
                                 <img className="history-image" src={require('../../assets/transactpic.png')}/>
                                 <Typography variant="body2" className="extension-text fs-6 fw-bold">

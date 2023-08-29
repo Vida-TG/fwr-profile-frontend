@@ -18,6 +18,7 @@ import { InstallmentPlans } from './components/accounts/InstallmentPlans';
 import { BankCards } from './components/accounts/BankCards';
 import { Statement } from './components/accounts/Statement';
 import { Summary } from './components/accounts/Summary';
+import { InstallmentPlansDetails } from './components/accounts/InstallmentPlansDetails';
 
 function App() {
   return (
@@ -87,6 +88,10 @@ function App() {
             <Route
               path='/user/installment-plans'
               element={<InstallmentPlans />}
+            />
+            <Route
+              path='/user/installment-plan-details'
+              element={<InstallmentPlansDetails />}
             />
             <Route
               path='/user/statement-of-account'

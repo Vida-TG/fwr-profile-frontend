@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { Button, IconButton, Toolbar } from '@mui/material'
 import Logo from '../../assets/9jaWivesLogo.png'
-import { CancelRounded, Close } from '@mui/icons-material'
+import { Close } from '@mui/icons-material'
 import { useNavigate } from 'react-router'
 
 export const Summary = () => {
