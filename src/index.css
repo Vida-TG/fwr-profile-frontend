@@ -18,7 +18,7 @@ code {
   background-repeat: no-repeat;    
   background-attachment: fixed;
 }
-@media screen and (min-width: 768px), (max-height: 1000px) {
+@media screen and (min-width: 768px) {
   .home, .email, .choose-country, .otp, .password, .phone-num, .login, .forgot-password, .reset, .success {
       background: url('../src/assets/yellow_smoke_background.png'), #000000;
       background-size: cover;
@@ -31,6 +31,14 @@ code {
       right: 0;
   }
 }
+/* @media screen and (max-height: 350px) {
+  .home {
+    background: url('../src/assets/yellow_smoke_background.png'), #000000;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    background-attachment: fixed;
+  }
+} */
 .active {
   color: #008000 !important;  
 }

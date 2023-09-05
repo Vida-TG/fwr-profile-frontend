@@ -15,7 +15,7 @@ const Home = ()=>{
             <img src={require("../assets/Foreign_Wive_Reigns.png")} width="90px" height="40px" className="mx-4 mt-4"  />
             <div className="d-flex justify-content-center mx-auto animate__animated animate__fadeInUp animate__slow">        
                 <div className="col-lg-3 col-md-6">
-                    <div className="d-flex justify-content-center pt-5">
+                    <div className="d-flex justify-content-center pt-5 px-md-0 px-4">
                         <img src={require("../assets/undraw_in_love.png")} className="img-fluid" />
                     </div>
                     <div>

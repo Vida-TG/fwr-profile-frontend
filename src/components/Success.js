@@ -48,7 +48,7 @@ const Success = ()=>{
                         <div className="d-flex justify-content-center">
                             <img src={require('../assets/account_created.png')} className="img-fluid" />
                         </div>
-                        <p className="text-white fs-2 lh-sm fw-bold-0 text-center pt-5">
+                        <p className="text-white fs-2 lh-sm fw-bold-0 text-center pt-2">
                             Account Successfully Created
                         </p>
                         <p className="fs-7 text-center fw-lighter">
