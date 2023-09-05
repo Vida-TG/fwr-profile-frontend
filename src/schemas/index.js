@@ -1,6 +1,6 @@
 import * as yup from 'yup'
 const passwordRules = /^(?=.*[a-zA-Z])(?=.*\d).{8,}$/
-const phonenumberRules = /(^[+]\d{13}$)/
+const phonenumberRules = /(^\d{13}$)/
 
 export const loginSchema = yup.object().shape({
     email: yup.string().required('Required'),

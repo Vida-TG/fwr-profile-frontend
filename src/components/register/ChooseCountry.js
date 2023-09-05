@@ -62,7 +62,7 @@ const ChooseCountry = ()=>{
                     What account would you like to open
                 </p>
                 <p className="fs-6 fw-lighter">
-                    Choose the country you are married to or you are from
+                    Choose the country that represents you as a Foreign Wife:
                 </p>
                 {
                     error !== '' && !error.includes('Check')
