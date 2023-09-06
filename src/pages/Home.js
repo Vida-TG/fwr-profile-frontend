@@ -12,15 +12,18 @@ const Home = ()=>{
       }
     return(
         <div className="home">
-            <img src={require("../assets/Foreign_Wive_Reigns.png")} width="90px" height="40px" className="mx-4 mt-4"  />
-            <div className="d-flex justify-content-center mx-auto animate__animated animate__fadeInUp animate__slow">        
+            <img src={require("../assets/Foreign_Wive_Reigns.png")} width="90px" height="40px" className="mx-4 mt-4 animate__animated animate__fadeInDown animate__slow"  />
+            <div className="d-flex justify-content-center mx-auto animate__animated animate__fadeIn animate__slow">        
                 <div className="col-lg-3 col-md-6">
-                    <div className="d-flex justify-content-center pt-5 px-md-0 px-4">
+                    <div className="d-flex justify-content-center pt-3 px-md-0 px-4">
                         <img src={require("../assets/undraw_in_love.png")} className="img-fluid" />
                     </div>
                     <div>
-                        <p className="fs-2 lh-sm text-center pt-5 fw-bold-0">
-                            One account for numerous benefits and adventures
+                        <p className="fs-2 lh-sm text-center pt-2 fw-lighter text-uppercase animate__animated animate__zoomIn animate__slow">
+                            Welcome our wife! 
+                        </p>
+                        <p className="fs-2 lh-sm text-center fw-light animate__animated animate__zoomIn animate__slow">
+                            Sign up and start your reign
                         </p>
                     </div>
                     <div className="d-flex justify-content-center flex-md-row flex-column pt-5">
