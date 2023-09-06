@@ -18,7 +18,7 @@ code {
   background-repeat: no-repeat;    
   background-attachment: fixed;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), (min-height: 550px) {
   .home, .email, .choose-country, .otp, .password, .phone-num, .login, .forgot-password, .reset, .success {
       background: url('../src/assets/yellow_smoke_background.png'), #000000;
       background-size: cover;
