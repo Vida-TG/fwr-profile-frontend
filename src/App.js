@@ -20,6 +20,7 @@ import { Statement } from './components/accounts/Statement';
 import { Summary } from './components/accounts/Summary';
 import { InstallmentPlansDetails } from './components/accounts/InstallmentPlansDetails';
 
+
 function App() {
   return (
     <div className="App">
